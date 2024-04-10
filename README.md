@@ -1,4 +1,4 @@
-# mm_template
+# mm-project-template
 
 This repository is the project template based on [mm series](https://github.com/open-mmlab).
 
