@@ -8,10 +8,11 @@ This repository is the project template based on [mm series](https://github.com/
 
 ## Supported environment
 
-- Tested by [Docker environment](Dockerfile) on Ubuntu22.04LTS
-- NVIDIA dependency: CUDA 11.1 + cuDNN 8
-- Pytorch: 1.9.0
-- MM Series
-  - mmcv v2.0.0rc4
+- Tested by [Docker environment](Dockerfile) on Ubuntu 22.04LTS
+- NVIDIA dependency: CUDA 12.1 + cuDNN 8
+- Library
+  - [pytorch v2.2.0](https://github.com/pytorch/pytorch/tree/v2.2.0)
+  - [mmcv v2.1.0](https://github.com/open-mmlab/mmcv/tree/v2.1.0)
   - [mmdetection3d v1.4.0](https://github.com/open-mmlab/mmdetection3d/tree/v1.4.0)
-  - [mmdetection v3.2.0](https://github.com/open-mmlab/mmdetection/tree/v3.2.0)
+  - [mmdetection v3.3.0](https://github.com/open-mmlab/mmdetection/tree/v3.3.0)
+  - [mmdeploy v1.3.1](https://github.com/open-mmlab/mmdeploy/tree/v1.3.1)
