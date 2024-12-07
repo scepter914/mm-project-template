@@ -8,6 +8,7 @@ ARG MMENGINE="0.10.3"
 ARG MMDET="3.2.0"
 ARG MMDEPLOY="1.3.1"
 ARG MMDET3D="1.4.0"
+ARG MMPRETRAIN="1.2.0"
 
 ENV CUDA_HOME="/usr/local/cuda" \
     FORCE_CUDA="1" \
@@ -41,12 +42,13 @@ RUN mim install \
     mmdeploy==${MMDEPLOY} \
     mmdet==${MMDET} \
     mmdet3d==${MMDET3D} \
-    mmengine==${MMENGINE}
+    mmengine==${MMENGINE} \
+    mmpretrain[multimodal]==${MMPRETRAIN}
+
 
 WORKDIR /workspace
 
-COPY autoware_ml autoware_ml
-COPY configs configs
+COPY mm_template mm_template
 COPY projects projects
 COPY tools tools
 COPY setup.py setup.py

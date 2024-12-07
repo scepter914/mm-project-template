@@ -6,21 +6,6 @@
 git clone https://github.com/scepter914/mm-project-template
 ```
 
-- Set dataset
-
-```
-ln -s {path_to_dataset} data
-```
-
-```sh
-├── data
-│  └── nuscenes
-├── Dockerfile
-├── projects
-├── README.md
-└── work_dirs
-```
-
 - Build docker
 
 ```sh
@@ -31,7 +16,7 @@ docker build -t mm_template .
 
 Prepare the dataset you use.
 
-### 2.1 [Option] nuScenes for 3D detection
+### nuScenes for 3D detection
 
 - Download dataset from official website
 - Run docker
@@ -51,7 +36,3 @@ python tools/create_data.py nuscenes --root-path ./data/nuscenes --out-dir ./dat
 
 - Change config
   - If you use custom pkl file, you need to change pkl file from `nuscenes_infos_train.pkl`.
-
-## 4. Visualization
-
-TBD
