@@ -1,0 +1,25 @@
+{
+  "editor.tabSize": 2,
+  "editor.rulers": [
+    119
+  ],
+  "python.defaultInterpreterPath": "/opt/conda/bin/python3",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSaveMode": "file",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "isort.args": [
+    "--profile",
+    "black"
+  ],
+  "black-formatter.args": [
+    "--line-length=119"
+  ],
+  "search.exclude": {
+    "**/work_dirs": true
+  }
+}

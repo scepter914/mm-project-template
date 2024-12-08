@@ -1,4 +1,23 @@
-## 1. Set environment
+## Set up development environment
+
+- [black](https://github.com/psf/black)
+
+```
+pip install black
+```
+
+- [isort](https://github.com/PyCQA/isort)
+
+```
+pip install isort
+```
+
+- We recommend VSCode extension
+  - [black-formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
+  - [isort](https://marketplace.visualstudio.com/items?itemName=ms-python.isort)
+
+## Get started
+### 1. Set environment
 
 - Clone
 
@@ -12,11 +31,11 @@ git clone https://github.com/scepter914/mm-project-template
 docker build -t mm_template .
 ```
 
-## 2. Prepare dataset
+### 2. Prepare dataset
 
 Prepare the dataset you use.
 
-### nuScenes for 3D detection
+#### nuScenes for 3D detection
 
 - Download dataset from official website
 - Run docker
@@ -32,7 +51,7 @@ docker run -it --rm --gpus all --shm-size=64g -v $PWD/:/workspace -v $PWD/data:/
 python tools/create_data.py nuscenes --root-path ./data/nuscenes --out-dir ./data/nuscenes --extra-tag nuscenes
 ```
 
-## 3. Train and evaluation
+### 3. Train and evaluation
 
 - Change config
   - If you use custom pkl file, you need to change pkl file from `nuscenes_infos_train.pkl`.
