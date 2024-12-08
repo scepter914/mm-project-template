@@ -4,12 +4,11 @@ import logging
 import os
 import os.path as osp
 
+from mmdet3d.utils import replace_ceph_backend
 from mmengine.config import Config, DictAction
 from mmengine.logging import print_log
 from mmengine.registry import RUNNERS
 from mmengine.runner import Runner
-
-from mmdet3d.utils import replace_ceph_backend
 
 
 def parse_args():

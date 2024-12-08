@@ -21,14 +21,14 @@ from os.path import exists, join
 import mmengine
 import numpy as np
 import tensorflow as tf
+from mmdet3d.datasets.convert_utils import post_process_coords
+from mmdet3d.structures import Box3DMode, LiDARInstance3DBoxes, points_cam2img
 from mmengine import print_log
 from nuscenes.utils.geometry_utils import view_points
 from PIL import Image
 from waymo_open_dataset.utils import range_image_utils, transform_utils
-from waymo_open_dataset.utils.frame_utils import parse_range_image_and_camera_projection
-
-from mmdet3d.datasets.convert_utils import post_process_coords
-from mmdet3d.structures import Box3DMode, LiDARInstance3DBoxes, points_cam2img
+from waymo_open_dataset.utils.frame_utils import \
+    parse_range_image_and_camera_projection
 
 
 class Waymo2KITTI(object):

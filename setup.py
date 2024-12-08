@@ -8,7 +8,8 @@ from os import path as osp
 
 import torch
 from setuptools import find_packages, setup
-from torch.utils.cpp_extension import BuildExtension, CppExtension, CUDAExtension
+from torch.utils.cpp_extension import (BuildExtension, CppExtension,
+                                       CUDAExtension)
 
 
 def readme():

@@ -3,11 +3,10 @@ import argparse
 import os
 import os.path as osp
 
+from mmdet3d.utils import replace_ceph_backend
 from mmengine.config import Config, ConfigDict, DictAction
 from mmengine.registry import RUNNERS
 from mmengine.runner import Runner
-
-from mmdet3d.utils import replace_ceph_backend
 
 
 # TODO: support fuse_conv_bn and format_only

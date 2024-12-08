@@ -3,9 +3,9 @@ import os
 
 import mmengine
 import numpy as np
-
 from tools.dataset_converters.s3dis_data_utils import S3DISData, S3DISSegData
-from tools.dataset_converters.scannet_data_utils import ScanNetData, ScanNetSegData
+from tools.dataset_converters.scannet_data_utils import (ScanNetData,
+                                                         ScanNetSegData)
 from tools.dataset_converters.sunrgbd_data_utils import SUNRGBDData
 
 
