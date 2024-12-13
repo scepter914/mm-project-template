@@ -1,18 +1,36 @@
 ## Set up development environment
 
-- [black](https://github.com/psf/black)
+- Install [black](https://github.com/psf/black)
 
-```
+```sh
 pip install black
 ```
 
-- [isort](https://github.com/PyCQA/isort)
+- Install [isort](https://github.com/PyCQA/isort)
 
-```
+```sh
 pip install isort
 ```
 
-- We recommend VSCode extension
+- Install pre-commit
+
+```sh
+pip install pre-commit
+```
+
+- Formatting by manual command
+
+```sh
+# To use:
+pre-commit run -a
+
+# runs every time you commit in git
+pre-commit install  # ()
+```
+
+- If you use VSCode, you can use [tasks of VSCode](https://github.com/tier4/autoware-ml/blob/main/.vscode/tasks.json).
+  - "Ctrl+shift+P" -> Select "Tasks: Run Task" -> Select "Pre-commit: Run"
+- In addition to it, I recommend VSCode extension
   - [black-formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
   - [isort](https://marketplace.visualstudio.com/items?itemName=ms-python.isort)
 
